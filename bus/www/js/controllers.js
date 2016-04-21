@@ -27,7 +27,19 @@ angular.module('app.controllers', [])
 
 })
    
-.controller('402Ctrl', function($scope) {
+.controller('402Ctrl', function($scope, $http) {
+		$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://paddygriffin.cloudapp.net/ionic402.php',
+        }).success(function(data) {
+            $scope.categories = data;
+        })
+          .error(function(data) {
+            $scope.categories = "No categories found by that name";
+        })
+    };
+
 
 })
    
