@@ -1,3 +1,195 @@
 <ion-view title="403" id="page7">
-    <ion-content padding="true" class="has-header"></ion-content>
+    <ion-content padding="true" class="has-header" data-ng-init="newTask()">
+	
+	<!--<table style="width:100%">
+		<!--	<tr>
+		<td>Eyre Square</td>
+		<td>Castle Park rd.</td>
+		<td>Parkmore rd.</td>
+	  </tr>-->
+	  <!--<tr>
+		<td>{{categories[0].castle_park_rd}}</td>
+		<td>{{categories[0].castle_park_rd}}</td>
+		<td>{{categories[0].parkmore_rd}}</td>	
+	  </tr>
+	  <tr>
+		<td>{{categories[1].castle_park_rd}}</td>
+		<td>{{categories[1].castle_park_rd}}</td>
+		<td>{{categories[1].parkmore_rd}}</td>	
+	  </tr>
+	  </table>-->
+	  
+	  
+	  	
+		<table style="width:100%">
+		<tr>
+    <td>castle_park_rd</td>
+    <td>castle_park_rd</td>
+	<td>parkmore_rd</td>
+  </tr>
+  <tr>
+    <td>{{categories[0].eyre_square}}</td>
+    <td>{{categories[0].castle_park_rd}}</td>
+	<td>{{categories[0].parkmore_rd}}</td>	
+  </tr>
+   <tr>
+    <td>{{categories[1].eyre_square}}</td>
+    <td>{{categories[1].castle_park_rd}}</td>
+	<td>{{categories[1].parkmore_rd}}</td>	
+  </tr>
+   <tr>
+    <td>{{categories[2].eyre_square}}</td>
+    <td>{{categories[2].castle_park_rd}}</td>
+	<td>{{categories[2].parkmore_rd}}</td>	
+  </tr>
+   <tr>
+    <td>{{categories[3].eyre_square}}</td>
+    <td>{{categories[3].castle_park_rd}}</td>
+	<td>{{categories[3].parkmore_rd}}</td>	
+  </tr>
+   <tr>
+    <td>{{categories[4].eyre_square}}</td>
+    <td>{{categories[4].castle_park_rd}}</td>
+	<td>{{categories[4].parkmore_rd}}</td>	
+  </tr>
+   <tr>
+    <td>{{categories[5].eyre_square}}</td>
+    <td>{{categories[5].castle_park_rd}}</td>
+	<td>{{categories[5].parkmore_rd}}</td>	
+  </tr>
+   <tr>
+    <td>{{categories[6].eyre_square}}</td>
+    <td>{{categories[6].castle_park_rd}}</td>
+	<td>{{categories[6].parkmore_rd}}</td>	
+  </tr>
+   <tr>
+    <td>{{categories[7].eyre_square}}</td>
+    <td>{{categories[7].castle_park_rd}}</td>
+	<td>{{categories[7].parkmore_rd}}</td>	
+  </tr>
+   <tr>
+    <td>{{categories[8].eyre_square}}</td>
+    <td>{{categories[8].castle_park_rd}}</td>
+	<td>{{categories[8].parkmore_rd}}</td>	
+  </tr>
+   <tr>
+    <td>{{categories[9].eyre_square}}</td>
+    <td>{{categories[9].castle_park_rd}}</td>
+	<td>{{categories[9].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[10].eyre_square}}</td>
+    <td>{{categories[10].castle_park_rd}}</td>
+	<td>{{categories[10].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[11].eyre_square}}</td>
+    <td>{{categories[11].castle_park_rd}}</td>
+	<td>{{categories[11].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[12].eyre_square}}</td>
+    <td>{{categories[12].castle_park_rd}}</td>
+	<td>{{categories[12].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[13].eyre_square}}</td>
+    <td>{{categories[13].castle_park_rd}}</td>
+	<td>{{categories[13].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[14].eyre_square}}</td>
+    <td>{{categories[14].castle_park_rd}}</td>
+	<td>{{categories[14].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[15].eyre_square}}</td>
+    <td>{{categories[15].castle_park_rd}}</td>
+	<td>{{categories[15].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[16].eyre_square}}</td>
+    <td>{{categories[16].castle_park_rd}}</td>
+	<td>{{categories[16].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[17].eyre_square}}</td>
+    <td>{{categories[17].castle_park_rd}}</td>
+	<td>{{categories[17].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[18].eyre_square}}</td>
+    <td>{{categories[18].castle_park_rd}}</td>
+	<td>{{categories[18].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[19].eyre_square}}</td>
+    <td>{{categories[19].castle_park_rd}}</td>
+	<td>{{categories[19].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[20].eyre_square}}</td>
+    <td>{{categories[20].castle_park_rd}}</td>
+	<td>{{categories[20].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[21].eyre_square}}</td>
+    <td>{{categories[21].castle_park_rd}}</td>
+	<td>{{categories[21].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[22].eyre_square}}</td>
+    <td>{{categories[22].castle_park_rd}}</td>
+	<td>{{categories[22].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[23].eyre_square}}</td>
+    <td>{{categories[23].castle_park_rd}}</td>
+	<td>{{categories[23].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[24].eyre_square}}</td>
+    <td>{{categories[24].castle_park_rd}}</td>
+	<td>{{categories[24].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[25].eyre_square}}</td>
+    <td>{{categories[25].castle_park_rd}}</td>
+	<td>{{categories[25].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[26].eyre_square}}</td>
+    <td>{{categories[26].castle_park_rd}}</td>
+	<td>{{categories[26].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[27].eyre_square}}</td>
+    <td>{{categories[27].castle_park_rd}}</td>
+	<td>{{categories[27].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[28].eyre_square}}</td>
+    <td>{{categories[28].castle_park_rd}}</td>
+	<td>{{categories[28].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[29].eyre_square}}</td>
+    <td>{{categories[29].castle_park_rd}}</td>
+	<td>{{categories[29].parkmore_rd}}</td>	
+  </tr>
+     <tr>
+    <td>{{categories[30].eyre_square}}</td>
+    <td>{{categories[30].castle_park_rd}}</td>
+	<td>{{categories[30].parkmore_rd}}</td>	
+  </tr>
+  <tr>
+    <td>{{categories[31].eyre_square}}</td>
+    <td>{{categories[31].castle_park_rd}}</td>
+	<td>{{categories[31].parkmore_rd}}</td>	
+  </tr>
+  
+  
+</table>
+	
+	</ion-content>
 </ion-view>

@@ -43,7 +43,18 @@ angular.module('app.controllers', [])
 
 })
    
-.controller('403Ctrl', function($scope) {
+.controller('403Ctrl', function($scope, $http) {
+		$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://paddygriffin.cloudapp.net/ionic403.php',
+        }).success(function(data) {
+            $scope.categories = data;
+        })
+          .error(function(data) {
+            $scope.categories = "No categories found by that name";
+        })
+    };
 
 })
    
